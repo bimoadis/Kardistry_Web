@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+}
+button {
+    background-color: teal;
+    border-radius: 5px;
+}
+    
+a{
+    color: #E1F4F5 ;
+    text-decoration: none;
+}
+
+
+
+
+/*----- Navbar Muali ------- */
+#navbar{
+    height: 55px;
+}
+/*----- Navbar Selesai ------- */
+
+
+/*----- Home Muali ------- */
+#home{
+    background-image: url(img/Home.jpg);
+    height: 800px;
+    
+}
+#home .container-fluid{
+    background-color: rgba(0, 0, 0, 0.55);black;
+    position: absolute;
+    height: 800px;
+    left: 0px;
+    top: 55px;
+
+}
+#home .container-fluid .container{
+    padding-top: 350px;
+    
+    
+}
+#home h1{
+    color: #FFFF;
+    font-size: 60px;
+}
+
+#home h4{
+    color: #FFFF;
+}
+
+#home button {
+    background-color: teal;
+    border-radius: 5px;
+    width: 110px;
+}
+/*----- Home Selesai ------- */
+
+
+/*----- About Muali ------- */
+/*----- About Selesai ------- */
+
+
+/*----- Class Muali ------- */
+/*----- Class Selesai ------- */
+
+
+/*----- Tutor Muali ------- */
+/*----- Tutor Selesai ------- */
+
+
