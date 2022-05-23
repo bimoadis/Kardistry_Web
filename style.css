@@ -49,15 +49,29 @@ a{
     color: #FFFF;
 }
 
-#home button {
+
+#home a {
     background-color: teal;
-    border-radius: 5px;
-    width: 110px;
+    border-radius: 100px;
+    width: fit-content;
 }
+
+
 /*----- Home Selesai ------- */
 
 
 /*----- About Muali ------- */
+#about .container-fluid .container{
+    background-color: #A1D6E2;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#about img {
+    width: 600px;
+    height: 350px ;
+}
 /*----- About Selesai ------- */
 
 
