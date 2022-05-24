@@ -48,21 +48,26 @@ a{
 #home h4{
     color: #FFFF;
 }
-
-
-#home a {
+#home button{
     background-color: teal;
-    border-radius: 100px;
     width: fit-content;
+    display: block;
+    margin: auto;
 }
-
-
 /*----- Home Selesai ------- */
 
 
 /*----- About Muali ------- */
+#about .container-fluid .container .row .col-6{
+    display: flex;
+    justify-content: center;
+}
+#about .container-fluid .container .row .col-6 .judul{
+    margin: auto;
+    margin-left: 50px;
+}
 #about .container-fluid .container{
-    background-color: #A1D6E2;
+    /*background-color: #A1D6E2;*/
     margin-top: 25px;
     padding: 20px;
     border-radius: 20px;
@@ -71,15 +76,69 @@ a{
 #about img {
     width: 600px;
     height: 350px ;
+    border-radius: 20px;
 }
 /*----- About Selesai ------- */
 
 
-/*----- Class Muali ------- */
-/*----- Class Selesai ------- */
+/*----- Kursus Muali ------- */
+#kursus{
+
+}
+#kursus .container-fluid .container .row .col-3 .card{
+    border-radius: 20px;
+}
+#kursus .container-fluid .container .row .col-3 .card{
+    background-color: #A1D6E2;
+    height: 400px;
+    border-radius: 20px;
+}
+#kursus img{
+    height: 40%;
+    display: block;
+    margin: auto;
+}
+/*----- Kursus Selesai ------- */
+
+/*--- kabar mulai ----*/
+#kabar .container-fluid .container .row .col-6{
+    display: flex;
+    justify-content: center;
+}
+#kabar .container-fluid .container .row .col-6 .judul{
+    margin: auto;
+    margin-left: 50px;
+}
+#kabar .container-fluid .container{
+    background-color: #A1D6E2;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#kabar img{
+    width: 600px;
+    height: 350px ;
+    border-radius: 20px;
+}
+/*--- kabar Selsai----*/
 
 
 /*----- Tutor Muali ------- */
+#tutor .container-fluid .container .row .col-2 .card{
+    background-color: #A1D6E2;
+    height: 300px;
+    width: 180px;
+    border-radius: 20px;
+
+}
+#tutor img{
+    height: 130px;
+    width: 130px;
+    border-radius: 70px;
+    display: block;
+    margin: auto;
+}
 /*----- Tutor Selesai ------- */
 
 
