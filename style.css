@@ -76,13 +76,15 @@ a{
 #about img {
     width: 600px;
     height: 350px ;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
 }
 /*----- About Selesai ------- */
 
 
 /*----- Kursus Muali ------- */
 #kursus{
+    padding-top: 30px;
+    padding-bottom: 40px;
 
 }
 #kursus .container-fluid .container .row .col-3 .card{
@@ -93,6 +95,9 @@ a{
     height: 400px;
     border-radius: 20px;
 }
+#kursus h2{
+    padding-bottom: 40px;
+}
 #kursus img{
     height: 40%;
     display: block;
@@ -101,6 +106,10 @@ a{
 /*----- Kursus Selesai ------- */
 
 /*--- kabar mulai ----*/
+#kabar{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
 #kabar .container-fluid .container .row .col-6{
     display: flex;
     justify-content: center;
@@ -119,7 +128,7 @@ a{
 #kabar img{
     width: 600px;
     height: 350px ;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
 }
 /*--- kabar Selsai----*/
 
@@ -140,5 +149,8 @@ a{
     margin: auto;
 }
 /*----- Tutor Selesai ------- */
+
+/*--------Footer Mulai---------*/
+/*--------Footer Selsai---------*/
 
 
