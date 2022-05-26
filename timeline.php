@@ -21,7 +21,7 @@
     <!----Header Mulai------>
     <!----Header Selesai------>
     <!--navbar-->
-    <section id="navbar ">
+    <section id="navbar bg-light">
         <!--------------------------------------Gantiiii---------------------------------->
         <div class="container-fluid">
             <div class="container">
@@ -42,15 +42,15 @@
                                 <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#kursus">Class</a>
+                                <a class="nav-link" href="view_class.php">Class</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#tutor">Tutor</a>
+                                <a class="nav-link" href="view_tutor.php">Tutor</a>
                             </li>
 
                         </ul>
                         <div class="button">
-                            <img class="img img-responsive rounded-circle" src="img/default.svg" alt="">
+                            <img class="img img-responsive rounded-circle " width="40" src="img/<?php echo $_SESSION['user']['photo'] ?>" />
                         </div>
                     </div>
 
@@ -110,7 +110,7 @@
                 <div class="row">
                     <h2 class="fw-bold text-center">Class of Cardistry</h2>
                     <div class="col-3">
-                        <div class="card rounded mx-auto d-block" style="width: 18rem;">
+                        <div class="card style=" style="width: 18rem;">
                             <img src="img/Basic Moves.jfif" class="card-img-top" alt="">
                             <div class="card-body">
                                 <h4 class="fw-bold">Basic Moves</h4>

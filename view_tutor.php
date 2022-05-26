@@ -1,3 +1,4 @@
+<?php require_once("auth.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!--Style CSS-->
     <link rel="stylesheet" href="style.css">
@@ -21,18 +21,16 @@
     <!----Header Mulai------>
     <!----Header Selesai------>
     <!--navbar-->
-    <section id="navbar">
+    <section id="navbar bg-light">
         <!--------------------------------------Gantiiii---------------------------------->
         <div class="container-fluid">
             <div class="container">
-                <nav class="navbar navbar-expand-lg bg-light">
+                <nav class="navbar navbar-expand-lg ">
                     <a class="navbar-brand" href="index.html">
                         <img src="img/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                         Kardistry
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -44,16 +42,15 @@
                                 <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#kursus">Class</a>
+                                <a class="nav-link" href="view_class.php">Class</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#tutor">Tutor</a>
+                                <a class="nav-link" href="view_tutor.php">Tutor</a>
                             </li>
 
                         </ul>
                         <div class="button">
-                            <button class="btn btn-outline-success" href="login.php">Log in</button>
-                            <button class="btn btn-outline-success" href="register.php">Register</button>
+                            <img class="img img-responsive rounded-circle " width="40" src="img/<?php echo $_SESSION['user']['photo'] ?>" />
                         </div>
                     </div>
 
@@ -63,7 +60,7 @@
 
         <!--------------------------------------Gantiiii Selsaiiii---------------------------------->
     </section>
-        <!--navbar selesai -->
+    <!--navbar selesai -->
 
     <section id="tutor">
         <div class="container-fluid">
@@ -177,7 +174,7 @@
 
 
 
-        <section class="aboutUs">
+    <section class="aboutUs">
         <div class="container-fluid">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -201,9 +198,7 @@
                         <img src="img/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                         Kardistry
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
