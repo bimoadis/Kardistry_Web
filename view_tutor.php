@@ -63,63 +63,108 @@
 
         <!--------------------------------------Gantiiii Selsaiiii---------------------------------->
     </section>
+        <!--navbar selesai -->
 
-    <section id="class">
+    <section id="tutor">
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
                     <h2 class="fw-bold text-center">Class of Cardistry</h2>
                     <div class="col-2">
                         <div class="card">
-                            <img src="img/One Handed.jfif" class="card-img-top" alt="">
+                            <img src="img/Lun-Zi.jpg" class="card-img-top" alt="">
                             <div class="card-body">
-                                <h4 class="fw-bold">Kelas Kartu</h4>
-                                <p class="card-text">Kelas ini adalah kelas supaya jago sulap.</p>
-                                <button class="btn-primary" style="background: #1995AD;
-                                border-radius: 6px; width:200px; height: 40px;
-                                margin-left: 35px;margin-top: 30px;">
-                                <a href="">Start Learn</a></button>
+                                <h4 class="fw-bold text-center">Lun-Zi</h4>
                             </div>
                         </div>
                     </div>
                     <div class="col-2">
-                        <div class="card" style="margin-left: 150px;">
-                            <img src="img/Two Handed.jfif" class="card-img-top" alt="">
+                        <div class="card">
+                            <img src="img/Patrick Varbavas.jpg" class="card-img-top" alt="">
                             <div class="card-body">
-                                <h4 class="fw-bold">Kelas Kartu</h4>
-                                <p class="card-text">Kelas ini adalah kelas supaya jago sulap</p>
-                                <button class="btn-primary" style="background: #1995AD;
-                                border-radius: 6px; width:200px; height: 40px;
-                                margin-left: 35px;margin-top: 30px;">
-                                <a href="">Start Learn</a></button>
+                                <h4 class="fw-bold text-center">Patrick Varnavas</h4>
                             </div>
                         </div>
                     </div>
                     <div class="col-2">
-                        <div class="card" style="margin-left: 300px;">
-                            <img src="img/Spreads.jpg" class="card-img-top" alt="" style="
-                            ">
+                        <div class="card">
+                            <img src="img/Lun-Zi.jpg" class="card-img-top" alt="">
                             <div class="card-body">
-                                <h4 class="fw-bold">Kelas Kartu</h4>
-                                <p class="card-text">Kelas ini adalah kelas supaya jago sulap</p>
-                                <button class="btn-primary" style="background: #1995AD;
-                                border-radius: 6px; width:200px; height: 40px;
-                                margin-left: 40px;margin-top: 30px;">
-                                <a href="">Start Learn</a></button>
+                                <h4 class="fw-bold text-center">Lun-Zi</h4>
                             </div>
                         </div>
                     </div>
                     <div class="col-2">
-                        <div class="card" style="margin-left: 450px;">
-                            <img src="img/Spreads.jpg" class="card-img-top" alt="" style="
-                            ">
+                        <div class="card">
+                            <img src="img/Patrick Varbavas.jpg" class="card-img-top" alt="">
                             <div class="card-body">
-                                <h4 class="fw-bold">Kelas Kartu</h4>
-                                <p class="card-text">Kelas ini adalah kelas supaya jago sulap</p>
-                                <button class="btn-primary" style="background: #1995AD;
-                                border-radius: 6px; width:200px; height: 40px;
-                                margin-left: 45px;margin-top: 30px;">
-                                <a href="">Start Learn</a></button>
+                                <h4 class="fw-bold text-center">Patrick Varnavas</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <img src="img/Lun-Zi.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h4 class="fw-bold text-center">Lun-Zi</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <img src="img/Patrick Varbavas.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a>
+                                    <h4 class="fw-bold text-center">Patrick Varnavas</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" style="margin-top:20px;">
+                        <div class="card">
+                            <img src="img/Lun-Zi.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h4 class="fw-bold text-center">Lun-Zi</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" style="margin-top:20px;">
+                        <div class="card">
+                            <img src="img/Lun-Zi.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h4 class="fw-bold text-center">Lun-Zi</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" style="margin-top:20px;">
+                        <div class="card">
+                            <img src="img/Lun-Zi.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h4 class="fw-bold text-center">Lun-Zi</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" style="margin-top:20px;">
+                        <div class="card">
+                            <img src="img/Lun-Zi.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h4 class="fw-bold text-center">Lun-Zi</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" style="margin-top:20px;">
+                        <div class="card">
+                            <img src="img/Lun-Zi.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h4 class="fw-bold text-center">Lun-Zi</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" style="margin-top:20px;">
+                        <div class="card">
+                            <img src="img/Lun-Zi.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h4 class="fw-bold text-center">Lun-Zi</h4>
                             </div>
                         </div>
                     </div>
@@ -128,9 +173,11 @@
         </div>
 
     </section>
+    <!------Mentor Selesai------->
 
-    <!--navbar selesai -->
-    <section class="aboutUs">
+
+
+        <section class="aboutUs">
         <div class="container-fluid">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">

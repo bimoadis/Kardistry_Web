@@ -150,6 +150,23 @@ a{
 }
 /*----- Tutor Selesai ------- */
 
+/*----- class Muali ------- */
+#class .container-fluid .container .row .col-2 .card{
+    background-color: rgba(161, 214, 226, 0.3);
+    height: 380px;
+    width: 300px;
+    border-radius: 20px;
+
+}
+#class img{
+    height: 130px;
+    width: 130px;
+    border-radius: 70px;
+    display: block;
+    margin: auto;
+}
+/*----- Class Selesai ------- */
+
 /*--------Footer Mulai---------*/
 /*--------Footer Selsai---------*/
 
