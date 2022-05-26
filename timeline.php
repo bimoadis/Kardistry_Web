@@ -21,11 +21,11 @@
     <!----Header Mulai------>
     <!----Header Selesai------>
     <!--navbar-->
-    <section id="navbar">
+    <section id="navbar bg-light">
         <!--------------------------------------Gantiiii---------------------------------->
         <div class="container-fluid">
             <div class="container">
-                <nav class="navbar navbar-expand-lg bg-light">
+                <nav class="navbar navbar-expand-lg ">
                     <a class="navbar-brand" href="index.html">
                         <img src="img/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                         Kardistry
@@ -42,17 +42,15 @@
                                 <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#kursus">Class</a>
+                                <a class="nav-link" href="view_class.php">Class</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#tutor">Tutor</a>
+                                <a class="nav-link" href="view_tutor.php">Tutor</a>
                             </li>
 
                         </ul>
                         <div class="button">
-                            <button><a href="login.php" class="btn ">Log in</a></button>
-                            <button><a href="register.php" class="btn ">Register</a></button>
-
+                            <img class="img img-responsive rounded-circle " width="40" src="img/<?php echo $_SESSION['user']['photo'] ?>" />
                         </div>
                     </div>
 
