@@ -38,16 +38,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#kursus">Class</a>
+                                <a class="nav-link" href="view_class.php">Class</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#tutor">Tutor</a>
+                                <a class="nav-link" href="view_tutor.php">Tutor</a>
                             </li>
 
                         </ul>
@@ -72,9 +72,11 @@
                     <h2 class="fw-bold text-center">Class of Cardistry</h2>
                     <div class="col-2">
                         <div class="card">
-                            <img src="img/Lun-Zi.jpg" class="card-img-top" alt="">
+                            <img src="img/Foto KTM.jfif" class="card-img-top" alt="">
                             <div class="card-body">
-                                <h4 class="fw-bold text-center">Lun-Zi</h4>
+                                <a href="detail_tutor.php">
+                                    <h4 class="fw-bold text-center">Bimo Adi Sakti</h4>
+                                </a>
                             </div>
                         </div>
                     </div>

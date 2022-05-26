@@ -63,73 +63,51 @@
 
         <!--------------------------------------Gantiiii Selsaiiii---------------------------------->
     </section>
+        <!--navbar selesai -->
 
-    <section id="class">
+
+    <section id="detail_tutor">
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <h2 class="fw-bold text-center">Class of Cardistry</h2>
+                    <h2 class="fw-bold text-center">Kenalan Dulu Sama Bimo</h2>
                     <div class="col-2">
-                        <div class="card">
-                            <img src="img/One Handed.jfif" class="card-img-top" alt="">
+                        <div class="card" style="background-color: #A1D6E2;
+                                height: 400px;
+                                width: 300px;
+                                border-radius: 30px;
+                                background: rgba(161, 214, 226, 0.3);
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
+                            <img src="img/Foto KTM.jfif" class="card-img-top" alt="" style="height: 130px;
+                                    width: 130px;
+                                    border-radius: 70px;
+                                    display: block;
+                                    margin: auto;
+                                    margin-top: 35px;">
                             <div class="card-body">
-                                <h4 class="fw-bold">Kelas Kartu</h4>
-                                <p class="card-text">Kelas ini adalah kelas supaya jago sulap.</p>
-                                <button class="btn-primary" style="background: #1995AD;
-                                border-radius: 6px; width:200px; height: 40px;
-                                margin-left: 35px;margin-top: 30px;">
-                                <a href="">Start Learn</a></button>
+                                <h4 class="fw-bold text-center">Bimo Ganteng</h4>
+                                <p class="card-text text-center">Magician PENS</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-2">
-                        <div class="card" style="margin-left: 150px;">
-                            <img src="img/Two Handed.jfif" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h4 class="fw-bold">Kelas Kartu</h4>
-                                <p class="card-text">Kelas ini adalah kelas supaya jago sulap</p>
-                                <button class="btn-primary" style="background: #1995AD;
-                                border-radius: 6px; width:200px; height: 40px;
-                                margin-left: 35px;margin-top: 30px;">
-                                <a href="">Start Learn</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="card" style="margin-left: 300px;">
-                            <img src="img/Spreads.jpg" class="card-img-top" alt="" style="
-                            ">
-                            <div class="card-body">
-                                <h4 class="fw-bold">Kelas Kartu</h4>
-                                <p class="card-text">Kelas ini adalah kelas supaya jago sulap</p>
-                                <button class="btn-primary" style="background: #1995AD;
-                                border-radius: 6px; width:200px; height: 40px;
-                                margin-left: 40px;margin-top: 30px;">
-                                <a href="">Start Learn</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="card" style="margin-left: 450px;">
-                            <img src="img/Spreads.jpg" class="card-img-top" alt="" style="
-                            ">
-                            <div class="card-body">
-                                <h4 class="fw-bold">Kelas Kartu</h4>
-                                <p class="card-text">Kelas ini adalah kelas supaya jago sulap</p>
-                                <button class="btn-primary" style="background: #1995AD;
-                                border-radius: 6px; width:200px; height: 40px;
-                                margin-left: 45px;margin-top: 30px;">
-                                <a href="">Start Learn</a></button>
-                            </div>
+                    <div class="col-4">
+                        <div class="container" style="width: 800px; height: 300px; 
+                                background: rgba(161, 214, 226, 0.3);
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 30px;
+                                margin-top: 30px;
+                                margin-left: 150px;">
+                            <h3> Tentang Tutor </h3>
+                            <p> Bimo adalah alumni SMANSA dan sekarang sedang kuliah tipis-tipis di PENS</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
 
-    <!--navbar selesai -->
+
+
     <section class="aboutUs">
         <div class="container-fluid">
             <div class="container">
