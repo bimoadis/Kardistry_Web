@@ -21,11 +21,11 @@
     <!----Header Mulai------>
     <!----Header Selesai------>
     <!--navbar-->
-    <section id="navbar">
+    <section id="navbar ">
         <!--------------------------------------Gantiiii---------------------------------->
         <div class="container-fluid">
             <div class="container">
-                <nav class="navbar navbar-expand-lg bg-light">
+                <nav class="navbar navbar-expand-lg ">
                     <a class="navbar-brand" href="index.html">
                         <img src="img/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                         Kardistry
@@ -50,9 +50,7 @@
 
                         </ul>
                         <div class="button">
-                            <button><a href="login.php" class="btn ">Log in</a></button>
-                            <button><a href="register.php" class="btn ">Register</a></button>
-
+                            <img class="img img-responsive rounded-circle" src="img/default.svg" alt="">
                         </div>
                     </div>
 
@@ -112,7 +110,7 @@
                 <div class="row">
                     <h2 class="fw-bold text-center">Class of Cardistry</h2>
                     <div class="col-3">
-                        <div class="card style=" style="width: 18rem;">
+                        <div class="card rounded mx-auto d-block" style="width: 18rem;">
                             <img src="img/Basic Moves.jfif" class="card-img-top" alt="">
                             <div class="card-body">
                                 <h4 class="fw-bold">Basic Moves</h4>
