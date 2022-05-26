@@ -26,7 +26,7 @@
         <div class="container-fluid">
             <div class="container">
                 <nav class="navbar navbar-expand-lg ">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.html ">
                         <img src="img/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                         Kardistry
                     </a>
@@ -52,6 +52,7 @@
                         <div class="button">
                             <img class="img img-responsive rounded-circle " width="40" src="img/<?php echo $_SESSION['user']['photo'] ?>" />
                         </div>
+
                     </div>
 
                 </nav>

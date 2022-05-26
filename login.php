@@ -8,12 +8,13 @@ if (isset($_POST['login'])) {
     $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
     $id = "SELECT * FROM users WHERE id";
 
-    $sql = "SELECT * FROM users WHERE username=:username";
+    $sql = "SELECT * FROM users WHERE username=:username OR email=:email";
     $stmt = $db->prepare($sql);
 
     // bind parameter ke query
     $params = array(
         ":username" => $username,
+        ":email" => $username
     );
 
     $stmt->execute($params);

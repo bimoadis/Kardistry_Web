@@ -18,6 +18,9 @@ a{
 #navbar{
     height: 55px;
 }
+#navbar a .nav-link{
+    color: teal;
+}
 /*----- Navbar Selesai ------- */
 
 
@@ -28,7 +31,7 @@ a{
     
 }
 #home .container-fluid{
-    background-color: rgba(0, 0, 0, 0.55);black;
+    background-color: rgba(0, 0, 0, 0.55);
     position: absolute;
     height: 800px;
     left: 0px;
@@ -87,14 +90,13 @@ a{
     padding-bottom: 40px;
 
 }
-#kursus .container-fluid .container .row .col-3 .card{
-    border-radius: 20px;
-}
+
 #kursus .container-fluid .container .row .col-3 .card{
     background-color: #A1D6E2;
     height: 400px;
-    border-radius: 20px;
+   
 }
+
 #kursus h2{
     padding-bottom: 40px;
 }
@@ -103,6 +105,7 @@ a{
     display: block;
     margin: auto;
 }
+
 /*----- Kursus Selesai ------- */
 
 /*--- kabar mulai ----*/
@@ -111,6 +114,7 @@ a{
     padding-bottom: 40px;
 }
 #kabar .container-fluid .container .row .col-6{
+
     display: flex;
     justify-content: center;
 }
@@ -138,7 +142,7 @@ a{
     background-color: #A1D6E2;
     height: 300px;
     width: 180px;
-    border-radius: 20px;
+    border-radius: 10px;
 
 }
 #tutor img{
@@ -147,6 +151,7 @@ a{
     border-radius: 70px;
     display: block;
     margin: auto;
+    margin-top: 20px;
 }
 /*----- Tutor Selesai ------- */
 
