@@ -52,6 +52,41 @@ if (isset($_POST['register'])) {
 </head>
 
 <body class="img js-fullheight" style="background-image: url(img/login.jpg);">
+    <?php
+    // define variables and set to empty values
+    $nameErr = $emailErr =  "";
+    $name = $email = "";
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (empty($_POST["name"])) {
+            $nameErr = "Name is required";
+        } else {
+            $name = test_input($_POST["name"]);
+            // check if name only contains letters and whitespace
+            if (!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
+                $nameErr = "Only letters and white space allowed";
+            }
+        }
+
+        if (empty($_POST["email"])) {
+            $emailErr = "Email is required";
+        } else {
+            $email = test_input($_POST["email"]);
+            // check if e-mail address is well-formed
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $emailErr = "Invalid email format";
+            }
+        }
+    }
+
+    function test_input($data)
+    {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+    ?>
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
@@ -71,7 +106,7 @@ if (isset($_POST['register'])) {
                                 <input type="text" class="form-control" name="username" placeholder="Username" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="email" placeholder="Email" required>
+                                <input type="email" class="form-control" name="email" placeholder="Email" required>
                             </div>
                             <div class="form-group">
                                 <input id="password-field" type="password" class="form-control" name="password" placeholder="Password" required>

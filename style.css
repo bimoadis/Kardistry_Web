@@ -10,7 +10,9 @@ a{
     color: #E1F4F5 ;
     text-decoration: none;
 }
-
+body {
+    background-color: #F8F8F8;
+}
 
 
 
