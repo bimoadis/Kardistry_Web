@@ -1,4 +1,8 @@
-<?php require_once("auth.php"); ?>
+<?php require_once("../auth.php");
+require_once("../admin/function.php");
+$class = query("SELECT * FROM class WHERE Nkelas ='Basic Moves'");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,18 +19,27 @@
 
 
     <title>Final Project || Kardistry</title>
+    <style>
+        .vertical-scrollable {
+            height: 680px;
+            overflow-y: scroll;
+        }
+    </style>
 </head>
 
 <body>
+    <!----Header Mulai------>
+    <!----Header Selesai------>
+    <!--navbar-->
     <section id="navbar">
         <!--------------------------------------Gantiiii---------------------------------->
         <div class="container-fluid">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-dark fixed-top " style="background-color: white;">
+                <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: white;">
                     <div class="container justify-content-center">
 
-                        <a class="navbar-brand" href="timeline.html" style="color:black;">
-                            <img src="img/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                        <a class="navbar-brand" href="../timeline.php" style="color:black;">
+                            <img src="../img/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                             Kardistry
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,15 +54,15 @@
                                     <a class="nav-link" style="color: teal ;" href="#about">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" style="color: teal ;" href="view_class.php">Class</a>
+                                    <a class="nav-link" style="color: teal ;" href="../view_class.php">Class</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" style="color: teal ;" href="view_tutor.php">Tutor</a>
+                                    <a class="nav-link" style="color: teal ;" href="../view_tutor.php">Tutor</a>
                                 </li>
 
                             </ul>
                             <div class="button">
-                                <img class="img img-responsive rounded-circle " width="40" src="img/default.svg">
+                                <img class="img img-responsive rounded-circle " width="40" src="../img/default.svg">
                             </div>
                         </div>
                     </div>
@@ -60,79 +73,62 @@
 
         <!--------------------------------------Gantiiii Selsaiiii---------------------------------->
     </section>
-    <!---------Navbar Selsai--------->
+    <!--navbar selesai -->
 
-    <section id="tutor">
+    <!---------------------------------class Mulai------------------------------------------->
+    <section id="class">
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <h2 class="fw-bold text-center" style="margin: 20px 0px 40px 0px;">Class of Cardistry</h2>
                     <div class="col-2">
-                        <div class="card">
-                            <img src="img/Patrick Varbavas.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <a href="detail_tutor.php">
-                                    <h4 class="fw-bold text-center">Patrick Varnavas</h4>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="card">
-                            <img src="img/Patrick Varbavas.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h4 class="fw-bold text-center">Patrick Varnavas</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="card">
-                            <img src="img/Lun-Zi.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h4 class="fw-bold text-center">Lun-Zi</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="card">
-                            <img src="img/Patrick Varbavas.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h4 class="fw-bold text-center">Patrick Varnavas</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="card">
-                            <img src="img/Lun-Zi.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h4 class="fw-bold text-center">Lun-Zi</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="card">
-                            <img src="img/Patrick Varbavas.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <a>
-                                    <h4 class="fw-bold text-center">Patrick Varnavas</h4>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                        <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 175px;">
+                            <a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+                                <span class="fs-5 fw-semibold" style="text-align: center;">Basic Moves</span>
+                            </a>
+                            <div class="list-group list-group-flush border-bottom scrollarea">
+                                <?php foreach ($class as $row) : ?>
+                                    <a href="#<?= $row["Nmove"]; ?>" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                            <?= $row["Nmove"]; ?>
+                                        </div>
+                                    </a>
+                                <?php endforeach; ?>
 
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-10  vertical-scrollable">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Video Pembelajaran</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <?php foreach ($class as $row) : ?>
+                                    <tr>
+                                        <td id="<?= $row["Nmove"]; ?>"><?= $row["Link"]; ?></td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+
+                        </table>
+                    </div>
                 </div>
-            </div>
-        </div>
-
     </section>
-    <!------Mentor Selesai------->
+
+    <!---------------------------------class Selesai------------------------------------------->
+
 
     <!-----Footer Mulai------>
     <section class="footer">
         <div class="container">
             <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
                 <div class="col-5">
-                    <a class="navbar-brand" href="timeline.html" style="color:black;">
+                    <a class="navbar-brand" href="../timeline.php" style="color:black;">
                         <img src="img/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                         Kardistry
                     </a>

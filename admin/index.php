@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+require_once("function.php");
+
+// if(isset($_POST["submit"])){
+//   is (tambah($_POST) > 0){
+
+//   }
+// }
+$class = query("SELECT * FROM class");
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,9 +42,8 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="logo" /></a>
-        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg"
-            alt="logo" /></a>
+        <a class="navbar-brand brand-logo" href="index.php"><img src="assets/images/logo.svg" alt="logo" /></a>
+        <a class="navbar-brand brand-logo-mini" href="index.php"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-stretch">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -38,8 +51,7 @@
         </button>
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item nav-profile dropdown">
-            <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown"
-              aria-expanded="false">
+            <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
               <div class="nav-profile-img">
                 <img src="assets/images/faces/face28.png" alt="image">
               </div>
@@ -47,8 +59,7 @@
                 <p class="mb-1 text-black">Henry Klein</p>
               </div>
             </a>
-            <div class="dropdown-menu navbar-dropdown dropdown-menu-right p-0 border-0 font-size-sm"
-              aria-labelledby="profileDropdown" data-x-placement="bottom-end">
+            <div class="dropdown-menu navbar-dropdown dropdown-menu-right p-0 border-0 font-size-sm" aria-labelledby="profileDropdown" data-x-placement="bottom-end">
               <div class="p-3 text-center bg-primary">
                 <img class="img-avatar img-avatar48 img-avatar-thumb" src="assets/images/faces/face28.png" alt="">
               </div>
@@ -68,8 +79,7 @@
                     <i class="mdi mdi-account-outline ml-1"></i>
                   </span>
                 </a>
-                <a class="dropdown-item py-1 d-flex align-items-center justify-content-between"
-                  href="javascript:void(0)">
+                <a class="dropdown-item py-1 d-flex align-items-center justify-content-between" href="javascript:void(0)">
                   <span>Settings</span>
                   <i class="mdi mdi-settings"></i>
                 </a>
@@ -79,7 +89,7 @@
                   <span>Lock Account</span>
                   <i class="mdi mdi-lock ml-1"></i>
                 </a>
-                <a class="dropdown-item py-1 d-flex align-items-center justify-content-between" href="#">
+                <a class="dropdown-item py-1 d-flex align-items-center justify-content-between" href="../loguot.php">
                   <span>Log Out</span>
                   <i class="mdi mdi-logout ml-1"></i>
                 </a>
@@ -88,8 +98,7 @@
           </li>
 
         </ul>
-        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
-          data-toggle="offcanvas">
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
           <span class="mdi mdi-menu"></span>
         </button>
       </div>
@@ -104,19 +113,19 @@
         <ul class="nav">
           <li class="nav-item nav-category">Main</li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="index.php">
               <span class="icon-bg"><i class="mdi mdi-cube menu-icon"></i></span>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/forms/basic_elements.html">
+            <a class="nav-link" href="pages/forms/basic_elements.php">
               <span class="icon-bg"><i class="mdi mdi-format-list-bulleted menu-icon"></i></span>
               <span class="menu-title">Forms</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/tables/basic-table.html">
+            <a class="nav-link" href="pages/tables/basic-table.php">
               <span class="icon-bg"><i class="mdi mdi-table-large menu-icon"></i></span>
               <span class="menu-title">Tables</span>
             </a>
@@ -156,10 +165,8 @@
             <div class="col-12">
               <span class="d-flex align-items-center purchase-popup">
                 <p>Like what you see? Check out our premium version for more.</p>
-                <a href="https://github.com/BootstrapDash/ConnectPlusAdmin-Free-Bootstrap-Admin-Template"
-                  target="_blank" class="btn ml-auto download-button">Download Free Version</a>
-                <a href="http://www.bootstrapdash.com/demo/connect-plus/jquery/template/" target="_blank"
-                  class="btn purchase-button">Upgrade To Pro</a>
+                <a href="https://github.com/BootstrapDash/ConnectPlusAdmin-Free-Bootstrap-Admin-Template" target="_blank" class="btn ml-auto download-button">Download Free Version</a>
+                <a href="http://www.bootstrapdash.com/demo/connect-plus/jquery/template/" target="_blank" class="btn purchase-button">Upgrade To Pro</a>
                 <i class="mdi mdi-close" id="bannerClose"></i>
               </span>
             </div>
@@ -173,9 +180,7 @@
                 <button type="button" class="btn btn-link text-light py-0">3 Month</button>
               </div>
               <div class="dropdown ml-0 ml-md-4 mt-2 mt-lg-0">
-                <button class="btn bg-white dropdown-toggle p-3 d-flex align-items-center" type="button"
-                  id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
-                    class="mdi mdi-calendar mr-1"></i>24 Mar 2019 - 24 Mar 2019 </button>
+                <button class="btn bg-white dropdown-toggle p-3 d-flex align-items-center" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-calendar mr-1"></i>24 Mar 2019 - 24 Mar 2019 </button>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
                   <h6 class="dropdown-header">Settings</h6>
                   <a class="dropdown-item" href="#">Action</a>
@@ -192,20 +197,16 @@
               <div class="d-sm-flex justify-content-between align-items-center transaparent-tab-border {">
                 <ul class="nav nav-tabs tab-transparent" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link" id="home-tab" data-toggle="tab" href="#" role="tab"
-                      aria-selected="true">Users</a>
+                    <a class="nav-link" id="home-tab" data-toggle="tab" href="#" role="tab" aria-selected="true">Users</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" id="business-tab" data-toggle="tab" href="#business-1" role="tab"
-                      aria-selected="false">Business</a>
+                    <a class="nav-link active" id="business-tab" data-toggle="tab" href="#business-1" role="tab" aria-selected="false">Business</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="performance-tab" data-toggle="tab" href="#" role="tab"
-                      aria-selected="false">Performance</a>
+                    <a class="nav-link" id="performance-tab" data-toggle="tab" href="#" role="tab" aria-selected="false">Performance</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="conversion-tab" data-toggle="tab" href="#" role="tab"
-                      aria-selected="false">Conversion</a>
+                    <a class="nav-link" id="conversion-tab" data-toggle="tab" href="#" role="tab" aria-selected="false">Conversion</a>
                   </li>
                 </ul>
                 <div class="d-md-block d-none">
@@ -221,8 +222,7 @@
                         <div class="card-body text-center">
                           <h5 class="mb-2 text-dark font-weight-normal">Orders</h5>
                           <h2 class="mb-4 text-dark font-weight-bold">932.00</h2>
-                          <div
-                            class="dashboard-progress dashboard-progress-1 d-flex align-items-center justify-content-center item-parent">
+                          <div class="dashboard-progress dashboard-progress-1 d-flex align-items-center justify-content-center item-parent">
                             <i class="mdi mdi-lightbulb icon-md absolute-center text-dark"></i>
                           </div>
                           <p class="mt-4 mb-0">Completed</p>
@@ -235,8 +235,7 @@
                         <div class="card-body text-center">
                           <h5 class="mb-2 text-dark font-weight-normal">Unique Visitors</h5>
                           <h2 class="mb-4 text-dark font-weight-bold">756,00</h2>
-                          <div
-                            class="dashboard-progress dashboard-progress-2 d-flex align-items-center justify-content-center item-parent">
+                          <div class="dashboard-progress dashboard-progress-2 d-flex align-items-center justify-content-center item-parent">
                             <i class="mdi mdi-account-circle icon-md absolute-center text-dark"></i>
                           </div>
                           <p class="mt-4 mb-0">Increased since yesterday</p>
@@ -249,8 +248,7 @@
                         <div class="card-body text-center">
                           <h5 class="mb-2 text-dark font-weight-normal">Impressions</h5>
                           <h2 class="mb-4 text-dark font-weight-bold">100,38</h2>
-                          <div
-                            class="dashboard-progress dashboard-progress-3 d-flex align-items-center justify-content-center item-parent">
+                          <div class="dashboard-progress dashboard-progress-3 d-flex align-items-center justify-content-center item-parent">
                             <i class="mdi mdi-eye icon-md absolute-center text-dark"></i>
                           </div>
                           <p class="mt-4 mb-0">Increased since yesterday</p>
@@ -263,8 +261,7 @@
                         <div class="card-body text-center">
                           <h5 class="mb-2 text-dark font-weight-normal">Followers</h5>
                           <h2 class="mb-4 text-dark font-weight-bold">4250k</h2>
-                          <div
-                            class="dashboard-progress dashboard-progress-4 d-flex align-items-center justify-content-center item-parent">
+                          <div class="dashboard-progress dashboard-progress-4 d-flex align-items-center justify-content-center item-parent">
                             <i class="mdi mdi-cube icon-md absolute-center text-dark"></i>
                           </div>
                           <p class="mt-4 mb-0">Decreased since yesterday</p>
@@ -282,13 +279,10 @@
                               <div class="d-flex justify-content-between align-items-center mb-4">
                                 <h4 class="card-title mb-0">Recent Activity</h4>
                                 <div class="dropdown dropdown-arrow-none">
-                                  <button class="btn p-0 text-dark dropdown-toggle" type="button"
-                                    id="dropdownMenuIconButton1" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
+                                  <button class="btn p-0 text-dark dropdown-toggle" type="button" id="dropdownMenuIconButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="mdi mdi-dots-vertical"></i>
                                   </button>
-                                  <div class="dropdown-menu dropdown-menu-right"
-                                    aria-labelledby="dropdownMenuIconButton1">
+                                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuIconButton1">
                                     <h6 class="dropdown-header">Settings</h6>
                                     <a class="dropdown-item" href="#">Action</a>
                                     <a class="dropdown-item" href="#">Another action</a>
@@ -387,8 +381,7 @@
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
               <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com
                 2020</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a
-                  href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard templates</a> from
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard templates</a> from
                 Bootstrapdash.com</span>
             </div>
           </div>

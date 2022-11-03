@@ -28,7 +28,7 @@
                 <nav class="navbar navbar-expand-lg navbar-dark fixed-top " style="background-color: white;">
                     <div class="container justify-content-center">
 
-                        <a class="navbar-brand" href="index.html" style="color:black;">
+                        <a class="navbar-brand" href="timeline.php" style="color:black;">
                             <img src="img/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                             Kardistry
                         </a>
@@ -52,7 +52,7 @@
 
                             </ul>
                             <div class="button">
-                                <img class="img img-responsive rounded-circle " width="40" src="img/<?php echo $_SESSION['user']['photo'] ?>" />
+                                <img class="img img-responsive rounded-circle " width="40" src="img/default.svg">
                             </div>
                         </div>
                     </div>
@@ -63,6 +63,7 @@
 
         <!--------------------------------------Gantiiii Selsaiiii---------------------------------->
     </section>
+    <!--navbar selesai -->
 
     <section id="kursus">
         <div class="container-fluid">
@@ -78,7 +79,7 @@
                                     aut fugit, sed quiaconsequ untur magni dolores eos qui ratione voluptate.</p>
                                 <div class="d-grid gap-2 col-6 mx-auto">
                                     <button class="btn btn-custom1" style="background-color: teal;
-                                border-radius: 5px;"><a class="text-center" href="#class">Start Learn</a></button>
+                                border-radius: 5px;"><a class="text-center" href="class/class_basic-move.php">Start Learn</a></button>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +102,7 @@
                         <div class="card" style="width: 18rem;">
                             <img src="img/Two Handed.jfif" class="card-img-top" alt="">
                             <div class="card-body">
-                                <h4 class="fw-bold">One-Handed Cuts</h4>
+                                <h4 class="fw-bold">Two-Handed Cuts</h4>
                                 <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
                                     aut fugit, sed quiaconsequ untur magni dolores eos qui ratione voluptate.</p>
                                 <div class="d-grid gap-2 col-6 mx-auto">
@@ -131,13 +132,13 @@
 
     </section>
 
-    <!--navbar selesai -->
+
     <!-----Footer Mulai------>
     <section class="footer">
         <div class="container">
             <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
                 <div class="col-5">
-                    <a class="navbar-brand" href="index.html" style="color:black;">
+                    <a class="navbar-brand" href="timeline.php" style="color:black;">
                         <img src="img/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                         Kardistry
                     </a>
@@ -186,7 +187,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
-                            <p>Copyright © <a href="index.html" target="_blank" style="color: black;">Kardistry</a>
+                            <p>Copyright © <a href="index.php" target="_blank" style="color: black;">Kardistry</a>
                                 2022.
                                 All Right
                                 Reserved By Kardistry.</p>

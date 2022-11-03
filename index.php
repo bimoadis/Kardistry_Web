@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!--Style CSS-->
     <link rel="stylesheet" href="style.css">
@@ -33,16 +32,13 @@
                             <img src="img/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                             Kardistry
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" style="color: teal;"
-                                        href="#home">Home</a>
+                                    <a class="nav-link active" aria-current="page" style="color: teal;" href="#home">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" style="color: teal ;" href="#about">About</a>
@@ -57,8 +53,7 @@
                             </ul>
                             <div class="button">
                                 <button><a href="login.php" style="color: #E1F4F5 ;" class="btn ">Log in</a></button>
-                                <button><a href="register.php" style="color: #E1F4F5 ;"
-                                        class="btn ">Register</a></button>
+                                <button><a href="register.php" style="color: #E1F4F5 ;" class="btn ">Register</a></button>
 
                             </div>
                         </div>
@@ -283,7 +278,7 @@
         <div class="container">
             <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
                 <div class="col-5">
-                    <a class="navbar-brand" href="index.html" style="color:black;">
+                    <a class="navbar-brand" href="index.php" style="color:black;">
                         <img src="img/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                         Kardistry
                     </a>
@@ -332,7 +327,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
-                            <p>Copyright © <a href="index.html" target="_blank" style="color: black;">Kardistry</a>
+                            <p>Copyright © <a href="index.php" target="_blank" style="color: black;">Kardistry</a>
                                 2022.
                                 All Right
                                 Reserved By Kardistry.</p>

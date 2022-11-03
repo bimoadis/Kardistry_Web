@@ -8335,18 +8335,19 @@ textarea.form-control {
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
   .btn.btn-primary {
-    background: #fbceb5 !important;
-    border: 1px solid #fbceb5 !important;
-    color: #000 !important; }
+    background: #A1D6E2 !important;
+    border: 1px solid #A1D6E2 !important;
+    color: #000 !important;
+}
     .btn.btn-primary:hover {
-      border: 1px solid #fbceb5;
+      border: 1px solid #A1D6E2;
       background: transparent;
-      color: #fbceb5; }
+      color: #A1D6E2; }
     .btn.btn-primary.btn-outline-primary {
-      border: 1px solid #fbceb5;
+      border: 1px solid #A1D6E2;
       background: transparent;
-      color: #fbceb5; }
+      color: #A1D6E2; }
       .btn.btn-primary.btn-outline-primary:hover {
         border: 1px solid transparent;
-        background: #fbceb5;
+        background: #A1D6E2;
         color: #fff; }

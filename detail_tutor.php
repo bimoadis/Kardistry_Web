@@ -1,3 +1,4 @@
+<?php require_once("auth.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +30,7 @@
                 <nav class="navbar navbar-expand-lg navbar-dark fixed-top " style="background-color: white;">
                     <div class="container justify-content-center">
 
-                        <a class="navbar-brand" href="index.html" style="color:black;">
+                        <a class="navbar-brand" href="timeline.php" style="color:black;">
                             <img src="img/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                             Kardistry
                         </a>
@@ -52,9 +53,8 @@
                                 </li>
 
                             </ul>
-                            <div class="button">
-                                <img class="img img-responsive rounded-circle " width="40" src="img/<?php echo $_SESSION['user']['photo'] ?>" />
-                            </div>
+                            <img class="img img-responsive rounded-circle " width="40" src="img/default.svg">
+                            <a href="loguot.php" style="color: teal ;">Log out</a>
                         </div>
                     </div>
 
@@ -70,7 +70,7 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <h2 class="fw-bold text-center">Kenalan Dulu Sama Bimo</h2>
+                    <h2 class="fw-bold text-center" style="margin:30px 0px 30px 0px;">Kenalan Dulu Yuk</h2>
                     <div class="col-2">
                         <div class="card" style="background-color: #A1D6E2;
                                 height: 400px;
@@ -78,27 +78,34 @@
                                 border-radius: 30px;
                                 background: rgba(161, 214, 226, 0.3);
                                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
-                            <img src="img/Foto KTM.jfif" class="card-img-top" alt="" style="height: 130px;
-                                    width: 130px;
-                                    border-radius: 70px;
+                            <img src="img/Patrick Varbavas.jpg" class="card-img-top" alt="" style="height: 180px;
+                                    width: 180px;
+                                    border-radius: 90px;
                                     display: block;
                                     margin: auto;
                                     margin-top: 35px;">
                             <div class="card-body">
-                                <h4 class="fw-bold text-center">Bimo Ganteng</h4>
-                                <p class="card-text text-center">Magician PENS</p>
+                                <h4 class="fw-bold text-center">Patrick Varnavas</h4>
+                                <p class="card-text text-center">Cardistry</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="container" style="width: 800px; height: 300px; 
+                        <div class="container" style="width: 800px; height:auto;  
                                 background: rgba(161, 214, 226, 0.3);
                                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                                 border-radius: 30px;
-                                margin-top: 30px;
                                 margin-left: 150px;">
-                            <h3> Tentang Tutor </h3>
-                            <p> Bimo adalah alumni SMANSA dan sekarang sedang kuliah tipis-tipis di PENS</p>
+                            <div class="card-text">
+                                <h3 style="padding-top:30px;"> Tentang Tutor </h3>
+                                <p>Patrick Varnavas is a 20 year old packet cutter hailing from the East coast of the USA and the founder of of the popular Instagram channel: BestCardistAlive. BCA has brought cardists together in an amazing way and guides the next generation of cardists.</p>
+                                <hr>
+                                <div class="sosmed" style="padding-bottom:30px;">
+                                    <a href="https://www.instagram.com/patch.god" style="color:black;padding-bottom: 30px;"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+                                            <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                                        </svg> Instagram</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -107,34 +114,17 @@
     </section>
 
 
-
-    <section class="aboutUs">
-        <div class="container-fluid">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="row">
-                        <div class="navbar-nav">
-                            <p class="nav-item nav-link" href="">About Us</p>
-                        </div>
-                        <p> Kardistry adalah website belajar sulap punya Bimo</p>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </section>
-
     <!-----Footer Mulai------>
     <section class="footer">
         <div class="container">
             <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
                 <div class="col-5">
-                    <a class="navbar-brand" href="index.html" style="color:black;">
+                    <a class="navbar-brand" href="timeline.php" style="color:black;">
                         <img src="img/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                         Kardistry
                     </a>
                     <p>Kardistry merupakan sebuah platform edukasi online
                         khusus di bidang seni pertunjukan kartu untuk pemula yang ingin belajar tentang cardisty.</p>
-                    <p class="text-muted">&copy; 2022</p>
                 </div>
 
                 <div class="col-1">
@@ -177,7 +167,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
-                            <p>Copyright © <a href="index.html" target="_blank" style="color: black;">Kardistry</a>
+                            <p>Copyright © <a href="index.php" target="_blank" style="color: black;">Kardistry</a>
                                 2022.
                                 All Right
                                 Reserved By Kardistry.</p>

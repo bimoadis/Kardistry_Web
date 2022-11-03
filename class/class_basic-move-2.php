@@ -1,4 +1,8 @@
-<?php require_once("auth.php"); ?>
+<?php require_once("../auth.php");
+require_once("../admin/function.php");
+$class = query("SELECT * FROM class WHERE Id = 1");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,14 +22,17 @@
 </head>
 
 <body>
+    <!----Header Mulai------>
+    <!----Header Selesai------>
+    <!--navbar-->
     <section id="navbar">
         <!--------------------------------------Gantiiii---------------------------------->
         <div class="container-fluid">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-dark fixed-top " style="background-color: white;">
+                <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: white;">
                     <div class="container justify-content-center">
 
-                        <a class="navbar-brand" href="timeline.html" style="color:black;">
+                        <a class="navbar-brand" href="../timeline.php" style="color:black;">
                             <img src="img/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                             Kardistry
                         </a>
@@ -41,15 +48,15 @@
                                     <a class="nav-link" style="color: teal ;" href="#about">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" style="color: teal ;" href="view_class.php">Class</a>
+                                    <a class="nav-link" style="color: teal ;" href="../view_class.php">Class</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" style="color: teal ;" href="view_tutor.php">Tutor</a>
+                                    <a class="nav-link" style="color: teal ;" href="../view_tutor.php">Tutor</a>
                                 </li>
 
                             </ul>
                             <div class="button">
-                                <img class="img img-responsive rounded-circle " width="40" src="img/default.svg">
+                                <img class="img img-responsive rounded-circle " width="40" src="img/<?php echo $_SESSION['user']['photo'] ?>" />
                             </div>
                         </div>
                     </div>
@@ -60,79 +67,73 @@
 
         <!--------------------------------------Gantiiii Selsaiiii---------------------------------->
     </section>
-    <!---------Navbar Selsai--------->
+    <!--navbar selesai -->
 
-    <section id="tutor">
+    <!---------------------------------class Mulai------------------------------------------->
+    <section id="class">
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <h2 class="fw-bold text-center" style="margin: 20px 0px 40px 0px;">Class of Cardistry</h2>
-                    <div class="col-2">
-                        <div class="card">
-                            <img src="img/Patrick Varbavas.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <a href="detail_tutor.php">
-                                    <h4 class="fw-bold text-center">Patrick Varnavas</h4>
+                    <div class="col-3">
+                        <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 300px;">
+                            <a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+                                <svg class="bi me-2" width="30" height="24">
+                                    <use xlink:href="#bootstrap" />
+                                </svg>
+                                <span class="fs-5 fw-semibold">Basic Moves</span>
+                            </a>
+                            <div class="list-group list-group-flush border-bottom scrollarea">
+                                <a href="class_basic-move.php" class="list-group-item list-group-item-action py-3 lh-tight">
+                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                        <strong class="mb-1">Swing Cut</strong>
+                                    </div>
                                 </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="card">
-                            <img src="img/Patrick Varbavas.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h4 class="fw-bold text-center">Patrick Varnavas</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="card">
-                            <img src="img/Lun-Zi.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h4 class="fw-bold text-center">Lun-Zi</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="card">
-                            <img src="img/Patrick Varbavas.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h4 class="fw-bold text-center">Patrick Varnavas</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="card">
-                            <img src="img/Lun-Zi.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h4 class="fw-bold text-center">Lun-Zi</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="card">
-                            <img src="img/Patrick Varbavas.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <a>
-                                    <h4 class="fw-bold text-center">Patrick Varnavas</h4>
+                                <a href="class_basic-move-1.php" class="list-group-item list-group-item-action py-3 lh-tight">
+                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                        <strong class="mb-1">Revolution Cut </strong>
+                                    </div>
                                 </a>
-                            </div>
-                        </div>
-                    </div>
+                                <a href="class_basic-move-2.php" class="list-group-item list-group-item-action active py-3 lh-tight" aria-current="true">
+                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                        <strong class="mb-1">Grips</strong>
+                                    </div>
+                                </a>
 
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-9">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Video Pembelajaran</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <?php foreach ($class as $row) : ?>
+                                    <tr>
+                                        <td><?= $row["Link"]; ?></td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
-        </div>
-
     </section>
-    <!------Mentor Selesai------->
+
+    <!---------------------------------class Selesai------------------------------------------->
+
 
     <!-----Footer Mulai------>
     <section class="footer">
         <div class="container">
             <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
                 <div class="col-5">
-                    <a class="navbar-brand" href="timeline.html" style="color:black;">
+                    <a class="navbar-brand" href="../timeline.php" style="color:black;">
                         <img src="img/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                         Kardistry
                     </a>
@@ -181,7 +182,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
-                            <p>Copyright © <a href="index.html" target="_blank" style="color: black;">Kardistry</a>
+                            <p>Copyright © <a href="../index.php" target="_blank" style="color: black;">Kardistry</a>
                                 2022.
                                 All Right
                                 Reserved By Kardistry.</p>
